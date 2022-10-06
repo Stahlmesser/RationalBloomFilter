@@ -1,3 +1,4 @@
 # RationalBloomFilter
 A Bloom filter is a probabilistic data structure known for being spaceefficient, which consists of a bitmap and a set of hash functions. Unfortunately, false positives may occur when using this structure for membership queries. Nevertheless, benefits like efficiency and space savings outweigh the disadvantages. Considering the advantages mentioned above, the Bloom filter can be applied to the field of data transmission. However, there are still some shortages existing in the standard Bloom filter.
+
 The rational Bloom filter may use a dierent number of hash functions for different inputs based on a property set by the user. So, the number of hash functions can be a non-integral rational number which is an expected value since different queries use different integral numbers of hash functions. This new characteristic can satisfy the maximum false positive rate requirement without expanding the filter size.
